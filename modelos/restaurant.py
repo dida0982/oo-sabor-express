@@ -1,18 +1,16 @@
 import os
 
 class  Restaurant:
-    name =''
-    category = ''
-    active = False
+    def __init__(self,name,category):
+        self.name = name
+        self.category = category
+        self.active = False
 
-Restaurant_square = Restaurant()
-Restaurant_square.name = 'Square'
-Restaurant_square.category = 'Gourmet'
+restaurant_square = Restaurant('Square','Gourmet' )
+restaurant_pizza = Restaurant('Pizza Express', 'Italiana')
 
-Restaurant_pizza = Restaurant()
+Restaurant = [restaurant_square, restaurant_pizza]
 
-Restaurant = [Restaurant_square, Restaurant_pizza]
-
-print(vars(Restaurant_square))
 os.system('cls')
-print(vars(Restaurant_square))
+print(vars(restaurant_square))
+print(vars(restaurant_pizza))
