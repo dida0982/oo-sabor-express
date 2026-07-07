@@ -1,3 +1,4 @@
+import os
 '''
 Mão na massa: refatorando uma função
 
@@ -16,3 +17,8 @@ class Musica:
 musica1 = Musica(nome='Under Pressure', artista='Queen & David Bowie', duracao=248)
 musica2 = Musica(nome='The Trooper', artista='Iron Maiden', duracao=245)
 musica3 = Musica(nome='Hotel California', artista='Eagles', duracao=390)
+
+os.system('cls')
+print(f'Música: {musica1.nome} | Artista: {musica1.artista} | Duração: {musica1.duracao}s')
+print(f'Música: {musica2.nome} | Artista: {musica2.artista} | Duração: {musica2.duracao}s')
+print(f'Música: {musica3.nome} | Artista: {musica3.artista} | Duração: {musica3.duracao}s')
