@@ -1,6 +1,6 @@
 from model.restaurant import Restaurant
 
-restaurant_square = Restaurant('praça', 'Gourmet')
+restaurant_square = Restaurant('Square', 'Gourmet')
 restaurant_mexicano = Restaurant('Mexican Food', 'Mexicana')
 restaurant_japones = Restaurant('Japa', 'Japonesa')
 
