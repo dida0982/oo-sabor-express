@@ -1,4 +1,3 @@
-import os
 from model import assessment
 from model.assessment import Assessment
 class Restaurant:
@@ -16,9 +15,9 @@ class Restaurant:
 
     @classmethod
     def restaurants_list(cls):
-        print(f'{"Name of restaurant".ljust(25)} | {"Category".ljust(25)} | Status')
+        print(f'{"Name of restaurant".ljust(25)} | {"Category".ljust(25)} | {'Assessment'.ljust(25)} | Status')
         for restaurant in cls.restaurants:
-            print(f'{restaurant._name.ljust(25)} | {restaurant._category.ljust(25)} | {restaurant.active}')
+            print(f'{restaurant._name.ljust(25)} | {restaurant._category.ljust(25)} | {str(restaurant.average_assessment).ljust(25)} | {restaurant.active}')
 
     @property
     def active(self):
@@ -32,7 +31,7 @@ class Restaurant:
         self._assessment.append(assessment)
 
     @property
-    def avarege_assessment(self):
+    def average_assessment(self):
         if not self._assessment:
             return 0
         sum_of_scores = sum(assessment._score for assessment in self._assessment)
