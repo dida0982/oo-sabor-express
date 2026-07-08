@@ -1,5 +1,8 @@
 ﻿# 🍽️ Sistema de Avaliação de Restaurantes
 
+<img width="1919" height="1034" alt="Screenshot 2026-07-08 174233" src="https://github.com/user-attachments/assets/5b45e786-6d01-4dc9-b0f4-a4503e144811" />
+
+
 Projeto desenvolvido em Python durante os estudos na Alura, com o objetivo de praticar Programação Orientada a Objetos (POO) aplicada a um caso real: um sistema simples para cadastro de restaurantes e recebimento de avaliações de clientes. A aplicação simula o funcionamento de uma plataforma de reviews, calculando a média de notas de cada estabelecimento e exibindo um painel geral com status de atividade.
 
 ## ✅ Funcionalidades
@@ -73,3 +76,22 @@ Desenvolvedor Full Stack | Brasília, DF - Brasil
 ---
 
 <p align="center">⭐ Se este projeto te ajudou de alguma forma, deixe uma estrela no repositório!</p>
+
+**Certificado Alura**
+
+<img width="737" height="523" alt="Screenshot 2026-07-08 173923" src="https://github.com/user-attachments/assets/1e53c018-7bc3-43f4-9a49-b5e92a27221e" />
+
+**Plataforma  Alura**
+
+<img width="1900" height="905" alt="Screenshot 2026-07-08 174025" src="https://github.com/user-attachments/assets/27ef0b62-763b-4049-ae09-7ee205f80bcd" />
+
+**Vídeo Aula**
+
+<img width="1904" height="907" alt="Screenshot 2026-07-08 174132" src="https://github.com/user-attachments/assets/861d42bf-642a-4f2c-b1d2-0c8312eb4120" />
+
+**Projeto**
+
+<img width="1919" height="1034" alt="Screenshot 2026-07-08 174233" src="https://github.com/user-attachments/assets/1400c3ce-1692-4196-a159-f9779a57a2cf" />
+
+
+
