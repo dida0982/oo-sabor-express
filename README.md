@@ -63,7 +63,7 @@ Este projeto reforça na prática conceitos essenciais de POO em Python, como en
 
 <img src="https://github.com/dida0982.png" width="150" alt="Foto de perfil">
 
-Desenvolvedor Front-end | Brasília, DF - Brasil
+Desenvolvedor Full Stack | Brasília, DF - Brasil
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-barros-6a0369209/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dida0982)
