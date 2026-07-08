@@ -27,13 +27,14 @@ class Restaurant:
         self._active = not self._active
 
     def receive_assessment(self, costomer, score):
-        assessment = Assessment(costomer, score)
-        self._assessment.append(assessment)
+        if 0 < score <= 5:
+            assessment = Assessment(costomer, score)
+            self._assessment.append(assessment)
 
     @property
     def average_assessment(self):
         if not self._assessment:
-            return 0
+            return '-'
         sum_of_scores = sum(assessment._score for assessment in self._assessment)
         amount_of_scores = len(self._assessment)
         average = round(sum_of_scores / amount_of_scores, 1)
