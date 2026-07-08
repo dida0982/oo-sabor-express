@@ -15,7 +15,6 @@ Crie uma classe chamada ClienteBanco com um construtor que aceita 5 atributos. I
 
 Crie um método de classe para a conta ClienteBanco.
 
-'''
 
 # 1) Crie uma classe chamada `ContaBancaria` com um construtor que aceita os parâmetros titular e saldo. Inicie o atributo ativo como False por padrão.
 class ContaBancaria:
@@ -95,3 +94,38 @@ class ClienteBanco:
 # Exemplo de uso do método de classe
 conta_cliente1 = ClienteBanco.criar_conta("Ana", 2000)
 print(f"Conta de {conta_cliente1.titular} criada com saldo inicial de R${conta_cliente1.saldo}")
+'''
+
+class ContaBancaria:
+
+    def __init__(self, titular, saldo):
+        self._titular = titular
+        self._saldo = saldo
+        self._ativo = False
+
+    @property
+    def titular(self):
+        return self._titular
+
+    @property
+    def saldo(self):
+        return self._saldo
+
+    @property
+    def ativo(self):
+        return self._ativo
+
+    def __str__(self):
+        return f"{self.titular} | Saldo: R${self.saldo:.2f}"
+
+    @classmethod
+    def ativar_conta(cls, conta):
+        conta._ativo = True
+
+conta = ContaBancaria("Carlos", 500)
+
+print(conta.ativo)
+
+ContaBancaria.ativar_conta(conta)
+
+print(conta.ativo)
