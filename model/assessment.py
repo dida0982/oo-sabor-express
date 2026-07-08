@@ -1,4 +1,4 @@
 class Assessment:
-    def __init__(self, customer, notice):
+    def __init__(self, customer, score):
         self._customer = customer
-        self._notice = notice
+        self._score = score
