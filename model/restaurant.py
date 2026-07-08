@@ -1,5 +1,6 @@
 import os
-
+from model import assessment
+from model.assessment import Assessment
 class Restaurant:
     restaurants = []
 
@@ -7,6 +8,7 @@ class Restaurant:
         self._name = name.title()
         self._category = category.upper()
         self._active = False
+        self._assessment =[]
         Restaurant.restaurants.append(self)
 
     def __str__(self):
@@ -24,3 +26,7 @@ class Restaurant:
 
     def change_status(self):
         self._active = not self._active
+
+    def receive_assessment(self, costomer, notice):
+        assessment = Assessment(costomer, notice)
+        self._assessment.append(assessment)

@@ -1,10 +1,9 @@
 from model.restaurant import Restaurant
 
 restaurant_square = Restaurant('Square', 'Gourmet')
-restaurant_mexicano = Restaurant('Mexican Food', 'Mexicana')
-restaurant_japones = Restaurant('Japa', 'Japonesa')
-
-restaurant_mexicano.change_status()
+restaurant_square.receive_assessment('Gui', 10)
+restaurant_square.receive_assessment('Lais', 8)
+restaurant_square.receive_assessment('Emy', 5)
 
 def main():
     Restaurant.restaurants_list()
