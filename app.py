@@ -1,12 +1,17 @@
+from model.menu import drink
+from model.menu import plate
 from model.restaurant import Restaurant
+from model.menu.drink import Drink
+from model.menu.plate import Plate
+from model.menu.item_menu import ItemMenu
 
 restaurant_square = Restaurant('Square', 'Gourmet')
-restaurant_square.receive_assessment('Gui', 10)
-restaurant_square.receive_assessment('Lais', 8)
-restaurant_square.receive_assessment('Emy', 2)
+drink_juice = Drink('Watermelon Juice', 5.0, 'big')
+plate_bread = Plate('Bread', 2.0, 'small')
 
 def main():
-    Restaurant.restaurants_list()
+    print(drink_juice)
+    print(plate_bread)
 
 if __name__ == '__main__':
     main()
