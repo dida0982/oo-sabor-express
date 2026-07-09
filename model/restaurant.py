@@ -1,5 +1,6 @@
 from model import assessment
 from model.assessment import Assessment
+from model.menu import drink
 class Restaurant:
     restaurants = []
 
@@ -8,6 +9,7 @@ class Restaurant:
         self._category = category.upper()
         self._active = False
         self._assessment =[]
+        self._menu = []
         Restaurant.restaurants.append(self)
 
     def __str__(self):
@@ -39,3 +41,9 @@ class Restaurant:
         amount_of_scores = len(self._assessment)
         average = round(sum_of_scores / amount_of_scores, 1)
         return average
+    #append = adiciona | self = objeto |
+    def add_drink_menu(self):
+        self._menu.append(drink)
+
+    def add_plate_menu(self, plate):
+        self._menu.append(plate)
