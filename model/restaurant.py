@@ -49,5 +49,9 @@ class Restaurant:
     def display_menu(self):
         print(f'Menu of resteurant {self._name}\n')
         for i, item in enumerate(self._menu, start=1):
-            message = f'{i}. Name:{item._name} | Price: R${item._price}'
-            print(message)
+            if hasattr(item, 'description'):
+                message_plate = f'{i}. Name:{item._name} | Price: R${item._price} | Description: {item.description}'
+                print(message_plate)
+            else:
+                message_drink = f'{i}. Name:{item._name} | Price: R${item._price} | Size: {item.size}'
+                print(message_drink)
