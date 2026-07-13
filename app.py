@@ -12,8 +12,7 @@ restaurant_square.add_menu(drink_juice)
 restaurant_square.add_menu(plate_bread)
 
 def main():
-    print(drink_juice)
-    print(plate_bread)
+    restaurant_square.display_menu
 
 if __name__ == '__main__':
     main()

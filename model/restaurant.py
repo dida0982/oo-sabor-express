@@ -1,7 +1,4 @@
-from app import ItemMenu
-from model import assessment
 from model.assessment import Assessment
-from model.menu import drink
 from model.menu.item_menu import ItemMenu
 class Restaurant:
     restaurants = []
@@ -43,13 +40,14 @@ class Restaurant:
         amount_of_scores = len(self._assessment)
         average = round(sum_of_scores / amount_of_scores, 1)
         return average
-    #append = adiciona | self = objeto |
-    # def add_drink_menu(self, drink):
-    #     self._menu.append(drink)
-
-    # def add_plate_menu(self, plate):
-    #     self._menu.append(plate)
 
     def add_menu(self, item):
         if isinstance(item, ItemMenu):
             self._menu.append(item)
+
+    @property
+    def display_menu(self):
+        print(f'Menu of resteurant {self._name}\n')
+        for i, item in enumerate(self._menu, start=1):
+            message = f'{i}. Name:{item._name} | Price: R${item._price}'
+            print(message)

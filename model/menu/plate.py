@@ -6,4 +6,4 @@ class Plate(ItemMenu):
         self.description = description
 
     def __str__(self):
-        return self.name
+        return self._name
