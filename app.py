@@ -7,7 +7,9 @@ from model.menu.item_menu import ItemMenu
 
 restaurant_square = Restaurant('Square', 'Gourmet')
 drink_juice = Drink('Watermelon Juice', 5.0, 'big')
+drink_juice.apply_discount()
 plate_bread = Plate('Bread', 2.0, 'small')
+plate_bread.apply_discount()
 restaurant_square.add_menu(drink_juice)
 restaurant_square.add_menu(plate_bread)
 
